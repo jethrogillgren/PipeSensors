@@ -8,11 +8,11 @@
 //
 
 #include <Wire.h>
-#include <VL6180X.h>
+#include <VL6180X.h> //1.2 by pololu
 
 
 #include <Printers.h>
-#include <elapsedMillis.h>
+#include <elapsedMillis.h> //1.0.4 Paul Stroffregen
 
 //TOF sensors
 #define RANGE 1
@@ -220,4 +220,3 @@ void SetSensorI2CAddress( int i, int enablePin, VL6180X *sensor, int address )
   sensor->startInterleavedContinuous(100);
   delay(100);
 }
-
